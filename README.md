@@ -48,6 +48,20 @@ y jornada de 07:00 a 17:00.
 
 Para instalar la BD manualmente, abra `sql/script_completo_bd_horarios_esclavas.sql` en MySQL Workbench y ejecútelo.
 
+### Si Windows bloquea SIHCA.exe
+
+- **SmartScreen** ("Windows protegió su PC"): elija *Más información → Ejecutar de todas formas*.
+- **Control inteligente de aplicaciones** (Smart App Control, Windows 11): bloquea los programas sin firma
+  digital comercial, como `SIHCA.exe` y `Iniciar_SIHCA.bat`, y no ofrece "Ejecutar de todas formas". Opciones:
+  1. **Sin desactivarlo:** en la carpeta `SIHCA`, escriba `cmd` en la barra de direcciones del Explorador y ejecute
+     ```
+     runtime\bin\javaw.exe -jar app\sihca.jar
+     ```
+     `javaw.exe` es el Java incluido y está firmado por Eclipse Adoptium.
+  2. **Desactivarlo:** *Seguridad de Windows → Control de aplicaciones y navegador → Configuración del control
+     inteligente de aplicaciones → Desactivado*. En Windows 11 actualizado (abril de 2026 o posterior) se puede
+     volver a activar desde la misma pantalla; en versiones anteriores requería restablecer Windows.
+
 ## Compilar desde el código fuente
 
 Requisitos: JDK 11 o superior (en el PATH). No se necesita Maven ni Gradle; el único `.jar` externo es el driver
