@@ -34,7 +34,8 @@ y jornada de 07:00 a 17:00.
 
 ## Ejecución rápida (sin instalar nada)
 
-1. Tener **MySQL Server 8.0** en ejecución.
+1. Tener **MySQL Server 8.0** instalado y **con el servicio iniciado** (ver más abajo
+   [Iniciar el servicio de MySQL](#iniciar-el-servicio-de-mysql)).
 2. Descargar la versión portable (carpeta `04_Ejecutable/SIHCA` de la entrega) y hacer doble clic en **`SIHCA.exe`**,
    o en `Iniciar_SIHCA.bat`. Incluye Java 17, así que no hace falta instalar Java.
 3. En **Configurar conexión**, escribir la contraseña de `root` de MySQL y presionar **Instalar base de datos**.
@@ -47,6 +48,24 @@ y jornada de 07:00 a 17:00.
 | `consulta` | `consulta123` | Consulta: solo ve y genera reportes |
 
 Para instalar la BD manualmente, abra `sql/script_completo_bd_horarios_esclavas.sql` en MySQL Workbench y ejecútelo.
+
+### Iniciar el servicio de MySQL
+
+Si SIHCA muestra *"No se pudo conectar con el servidor MySQL"* (o MySQL Workbench dice
+*"Could not connect, server may not be running"*), el servicio de MySQL está detenido:
+
+1. Presione `Windows + R`, escriba `services.msc` y presione Enter.
+2. Busque el servicio **MySQL80** (o **MySQL**, según su instalación).
+3. Clic derecho → **Iniciar**. El estado debe cambiar a *En ejecución*.
+4. Recomendado: clic derecho → **Propiedades** → *Tipo de inicio:* **Automático**, para que arranque con Windows.
+
+Alternativa desde una consola **como administrador**:
+
+```
+net start MySQL80
+```
+
+Si el servicio no inicia, verifique que ningún otro programa (por ejemplo, el MySQL de XAMPP) esté usando el puerto 3306.
 
 ### Si Windows bloquea SIHCA.exe
 
