@@ -6,7 +6,7 @@ import sihca.ui.Tema;
 
 /**
  * SIHCA - Sistema de Horarios y Carga Académica
- * Colegio Particular Esclavas del Sagrado Corazón de Jesús (Arequipa).
+ * Aplicativo de uso general para instituciones educativas (Inicial, Primaria y Secundaria).
  * <p>
  * Aplicativo cliente de escritorio que consume la base de datos MySQL
  * bd_horarios_esclavas exclusivamente mediante procedimientos almacenados

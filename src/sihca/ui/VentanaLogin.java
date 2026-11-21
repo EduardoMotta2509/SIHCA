@@ -145,6 +145,9 @@ public class VentanaLogin extends JFrame {
 
     private static javax.swing.JComponent alinear(javax.swing.JComponent c) {
         c.setAlignmentX(LEFT_ALIGNMENT);
+        if (c instanceof JLabel && c.getBorder() == null) {
+            c.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 12)); // evita recortes del último carácter
+        }
         return c;
     }
 
@@ -179,7 +182,7 @@ public class VentanaLogin extends JFrame {
             nl.setForeground(new Color(0xDCE4F5));
             arriba.add(alinear(nl));
             arriba.add(espacio(26));
-            JLabel d = new JLabel("<html><div style='width:280px'>Organice la carga académica, valide cruces de "
+            JLabel d = new JLabel("<html><div style='width:240px'>Organice la carga académica, valide cruces de "
                     + "horario y aforos, y conserve el registro histórico de cada año lectivo.</div></html>");
             d.setFont(Tema.normal(14f));
             d.setForeground(new Color(0xB9C6E0));
@@ -189,12 +192,12 @@ public class VentanaLogin extends JFrame {
             JPanel abajo = new JPanel();
             abajo.setOpaque(false);
             abajo.setLayout(new BoxLayout(abajo, BoxLayout.Y_AXIS));
-            JLabel col = new JLabel("<html>Colegio Particular<br>Esclavas del Sagrado Corazón de Jesús</html>");
+            JLabel col = new JLabel("<html>Para instituciones educativas de<br>Inicial, Primaria y Secundaria</html>");
             col.setFont(Tema.semi(14f));
             col.setForeground(Color.WHITE);
             abajo.add(alinear(col));
             abajo.add(espacio(4));
-            JLabel lema = new JLabel("“Amar, adorar y servir”  ·  Arequipa");
+            JLabel lema = new JLabel("Cruces, aforos e histórico bajo control");
             lema.setFont(Tema.normal(12.5f));
             lema.setForeground(Tema.DORADO);
             abajo.add(alinear(lema));

@@ -63,7 +63,7 @@ public class PanelReportes extends Modulo {
 
     private static final Def[] REPORTES = {
         new Def("R01", "Matriz de horarios por sección", "Bloques de la semana de una sección con docente, ambiente "
-                + "y exigencia cognitiva (vista que se publica en EdusoftNet).", true, "sp_rep_matriz_seccion",
+                + "y exigencia cognitiva (vista para publicar a estudiantes y familias).", true, "sp_rep_matriz_seccion",
                 Param.PERIODO, Param.SECCION),
         new Def("R02", "Horario personal del docente", "Todas las actividades de un docente: clases, recesos y "
                 + "reuniones, con las secciones atendidas.", true, "sp_rep_horario_docente", Param.PERIODO, Param.DOCENTE),

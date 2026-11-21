@@ -45,7 +45,7 @@ import sihca.ui.componentes.UI;
 /**
  * Matriz de horarios: cuadrícula semanal (días x franjas) de una sección o de
  * un docente, coloreada por asignatura. Se puede exportar como imagen PNG para
- * publicarla en la plataforma EdusoftNet, o imprimir.
+ * publicarla en la plataforma virtual de la institución, o imprimir.
  */
 public class PanelMatriz extends Modulo {
 
@@ -81,7 +81,7 @@ public class PanelMatriz extends Modulo {
     }
 
     @Override public String titulo() { return "Matriz de horarios"; }
-    @Override public String descripcion() { return "Horario semanal por sección o por docente, listo para publicar en EdusoftNet"; }
+    @Override public String descripcion() { return "Horario semanal por sección o por docente, listo para publicar o imprimir"; }
     @Override public Iconos.Tipo icono() { return Iconos.Tipo.MATRIZ; }
     @Override public boolean dependeDelPeriodo() { return true; }
 
@@ -295,7 +295,7 @@ public class PanelMatriz extends Modulo {
             g.drawString((porSeccion ? "Horario de " : "Horario del docente ") + titulo, 8, 26);
             g.setFont(Tema.normal(12.5f));
             g.setColor(Tema.TEXTO_SUAVE);
-            g.drawString("Periodo " + Sesion.periodo() + "  ·  Colegio Particular Esclavas del Sagrado Corazón de Jesús"
+            g.drawString("Periodo " + Sesion.periodo() + "  ·  SIHCA - Sistema de Horarios y Carga Académica"
                     + "  ·  " + celdas.size() + " bloques", 8, 46);
 
             int x0 = 8;

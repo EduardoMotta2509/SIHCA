@@ -71,7 +71,7 @@ public final class Exportador {
         }
         try {
             tabla.print(JTable.PrintMode.FIT_WIDTH, new MessageFormat(titulo),
-                    new MessageFormat("SIHCA - Colegio Esclavas del Sagrado Corazón de Jesús   |   Página {0}"));
+                    new MessageFormat("SIHCA - Sistema de Horarios y Carga Académica   |   Página {0}"));
         } catch (PrinterException ex) {
             Mensajes.error(padre, "No se pudo imprimir", ex.getMessage());
         }

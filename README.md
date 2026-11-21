@@ -1,8 +1,8 @@
 # SIHCA: Sistema de Horarios y Carga Académica
 
-Aplicativo cliente de escritorio que consume la base de datos **`bd_horarios_esclavas`** (MySQL 8.0) para la
-funcionalidad de **Asignación de Horarios y Carga Académica** del **Colegio Particular Esclavas del Sagrado
-Corazón de Jesús** (Arequipa, RUC 20170517688).
+Aplicativo de escritorio de **uso general para instituciones educativas** (Inicial, Primaria y Secundaria) que permite
+**asignar horarios y carga académica docente** sobre la base de datos MySQL **`bd_horarios_esclavas`**. Valida cruces de horario,
+aforos de ambientes, especialidades y planes de estudio, y conserva el registro histórico de cada año lectivo.
 
 Es el proyecto de laboratorio de **Gestión de Datos e Información (GDI), Grupo 09**, entregas 05 y 06.
 

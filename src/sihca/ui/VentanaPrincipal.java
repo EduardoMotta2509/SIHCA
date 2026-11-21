@@ -278,7 +278,7 @@ public class VentanaPrincipal extends JFrame {
         JLabel n = new JLabel(Main.NOMBRE);
         n.setFont(Tema.negrita(19f));
         n.setForeground(Color.WHITE);
-        JLabel c = new JLabel("Colegio Esclavas del S. C. J.");
+        JLabel c = new JLabel("Horarios y carga académica");
         c.setFont(Tema.normal(11.5f));
         c.setForeground(new Color(0x9FB0D0));
         mt.add(n);
