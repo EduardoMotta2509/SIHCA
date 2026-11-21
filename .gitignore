@@ -1,0 +1,18 @@
+# Compilación
+build/
+*.class
+# Configuración local (contiene la contraseña de MySQL)
+config/
+# Artefactos del lanzador y del paquete portable
+lanzador/*.res
+lanzador/SIHCA.exe
+runtime/
+dist/
+# Sistema operativo / IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+nbproject/
+__pycache__/

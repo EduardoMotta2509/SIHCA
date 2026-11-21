@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: sihca.Main
+Class-Path: lib/mysql-connector-j-8.4.0.jar
+Implementation-Title: SIHCA - Sistema de Horarios y Carga Academica
+Implementation-Version: 1.0.0
+Implementation-Vendor: GDI Grupo 09
